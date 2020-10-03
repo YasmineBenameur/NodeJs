@@ -1,0 +1,2 @@
+// TODO: lors de son exécution, ce programme doit écrire "Hello World" (sans les guillemets) dans la console
+console.log("Hello World") // POUR AFFICHER ce qu'on veut sur l'écran
