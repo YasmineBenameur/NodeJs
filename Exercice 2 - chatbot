@@ -1,0 +1,11 @@
+const express = require('express');
+const PORT = 3000;
+var app = express(); //instanciation d'une application Express
+ 
+app.get('/', function (req, res) {  // question à poser : prk 'req' est pas défini et ca pose pas un problem & comment une fonction est parametre d'une autre fonction
+ res.send("Bonjour !")
+})
+app.listen(3000)
+console.log(`Server is running`);
+
+
