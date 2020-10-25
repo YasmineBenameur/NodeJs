@@ -1,0 +1,9 @@
+const https = require('https');
+
+https.get('https://jsonplaceholder.typicode.com/photos/1', (res) => {
+  
+  res.on('data', (d) => {
+   process.stdout.write(d);
+  });
+
+});
