@@ -18,3 +18,12 @@ let textfinal= content.tolowercase();
 // TODO: afficher le contenu de cette variable
 // console.log ...
 console.log(textfinal);
+// TODO: écrire ce contenu modifié dans le fichier `résultat.txt`
+// fs.writeFile ...
+// TODO: en cas d'erreur d'écriture de fichier: afficher le message d'erreur dans la sortie d'erreurs
+// console.error ...
+
+fs.writefile(fichierDestination, textfinal,{encoding : 'UFT-8'}, function(err) { 
+      if (err) throw err;
+      console.log('text bien copié');
+ };
