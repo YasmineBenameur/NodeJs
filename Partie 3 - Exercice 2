@@ -1,0 +1,20 @@
+const fs = require('fs');
+
+const fichierSource = process.argv[2]; // nom de fichier récupéré depuis arguments de ligne de commande
+const fichierDestination = 'résultat.txt';
+
+// TODO: récupèrer dans une variable le contenu du fichier spécifié par `fichierSource`, avec fs.readFile()
+let content = fs.readfile(fichierSource, {encoding : 'UFT-8'}, function(err, data) {
+
+   const content = data;
+   const textfinal = content.toLowercase();
+   console.log(textfinal);
+    };
+
+// TODO: remplacer toutes les lettres majuscules de ce contenu par des minuscules, en modifiant la variable
+// contenu = ...
+let textfinal= content.tolowercase();
+
+// TODO: afficher le contenu de cette variable
+// console.log ...
+console.log(textfinal);
